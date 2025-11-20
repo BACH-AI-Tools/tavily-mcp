@@ -1,5 +1,5 @@
 {
-  "name": "tavily-mcp",
+  "name": "@bachstudio/tavily-mcp",
   "version": "0.2.10",
   "description": "MCP server for advanced web search using Tavily",
   "type": "module",
@@ -38,7 +38,7 @@
     "data-extraction",
     "search-integration"
   ],
-  "author": "Tavily",
+  "author": "bachstudio",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "0.6.0",
