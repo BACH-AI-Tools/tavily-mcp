@@ -12,7 +12,9 @@ The Tavily MCP server provides:
 - Real-time web search capabilities through the tavily-search tool
 - Intelligent data extraction from web pages via the tavily-extract tool
 - Powerful web mapping tool that creates a structured map of website 
-- Web crawler that systematically explores websites 
+- Web crawler that systematically explores websites
+
+> **基于原项目**: 此项目基于 [tavily-mcp](https://github.com/tavily-ai/tavily-mcp) 修改而来
 
 
 ### 📚 Helpful Resources
@@ -158,7 +160,7 @@ Before you begin, ensure you have:
 ### Running with NPX 
 
 ```bash
-npx -y tavily-mcp@latest 
+npx -y @bachstudio/tavily-mcp
 ```
 
 ### Installing via Smithery
@@ -166,7 +168,7 @@ npx -y tavily-mcp@latest
 To install Tavily MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@tavily-ai/tavily-mcp):
 
 ```bash
-npx -y @smithery/cli install @tavily-ai/tavily-mcp --client claude
+npx -y @smithery/cli install @bachstudio/tavily-mcp --client claude
 ```
 
 Although you can launch a server on its own, it's not particularly helpful in isolation. Instead, you should integrate it into an MCP client. Below is an example of how to configure the Claude Desktop app to work with the tavily-mcp server.
@@ -202,7 +204,7 @@ Add the following JSON block to your User Settings (JSON) file in VS Code. You c
     "servers": {
       "tavily": {
         "command": "npx",
-        "args": ["-y", "tavily-mcp@latest"],
+        "args": ["-y", "@bachstudio/tavily-mcp"],
         "env": {
           "TAVILY_API_KEY": "${input:tavily_api_key}"
         }
@@ -227,7 +229,7 @@ Optionally, you can add it to a file called `.vscode/mcp.json` in your workspace
   "servers": {
     "tavily": {
       "command": "npx",
-      "args": ["-y", "tavily-mcp@latest"],
+      "args": ["-y", "@bachstudio/tavily-mcp"],
       "env": {
         "TAVILY_API_KEY": "${input:tavily_api_key}"
       }
@@ -273,7 +275,7 @@ Alternatively, you can manually set up the Tavily MCP server in Cline:
      "mcpServers": {
        "tavily-mcp": {
          "command": "npx",
-         "args": ["-y", "tavily-mcp@latest"],
+         "args": ["-y", "@bachstudio/tavily-mcp"],
          "env": {
            "TAVILY_API_KEY": "your-api-key-here"
          },
@@ -317,7 +319,7 @@ Replace `your-api-key-here` with your actual [Tavily API key](https://tavily.com
   "mcpServers": {
     "tavily-mcp": {
       "command": "npx",
-      "args": ["-y", "tavily-mcp@latest"],
+      "args": ["-y", "@bachstudio/tavily-mcp"],
       "env": {
         "TAVILY_API_KEY": "your-api-key-here"
       }
